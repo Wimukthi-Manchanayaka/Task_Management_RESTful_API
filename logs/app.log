@@ -1,0 +1,32 @@
+[2025-02-24T23:04:27.942Z] INFO: Request: POST /api/tasks | IP: ::1 | User-Agent: PostmanRuntime/7.43.0
+[2025-02-24T23:04:28.030Z] INFO: Response: POST / | Status: 201 | Data: {"id":7,"title":"New Task","description":"Test task","status":"TO_DO","createdAt":"2025-02-24T23:04:27.000Z","updatedAt":"2025-02-24T23:04:27.000Z"}
+[2025-02-24T23:23:42.901Z] INFO: Request: POST /api/tasks | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:23:42.929Z] INFO: Response: POST / | Status: 500 | Data: {"message":"Access denied for user ''@'localhost' (using password: NO)"}
+[2025-02-24T23:23:42.940Z] INFO: Request: GET /api/tasks | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:23:42.944Z] INFO: Response: GET / | Status: 500 | Data: {"message":"Access denied for user ''@'localhost' (using password: NO)"}
+[2025-02-24T23:23:42.947Z] INFO: Request: GET /api/tasks/undefined | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:23:42.951Z] INFO: Response: GET /undefined | Status: 500 | Data: {"message":"Access denied for user ''@'localhost' (using password: NO)"}
+[2025-02-24T23:23:42.954Z] INFO: Request: PUT /api/tasks/undefined | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:23:42.959Z] INFO: Response: PUT /undefined | Status: 500 | Data: {"message":"Access denied for user ''@'localhost' (using password: NO)"}
+[2025-02-24T23:23:42.963Z] INFO: Request: DELETE /api/tasks/undefined | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:23:42.966Z] INFO: Response: DELETE /undefined | Status: 500 | Data: {"message":"Access denied for user ''@'localhost' (using password: NO)"}
+[2025-02-24T23:28:39.994Z] INFO: Request: POST /api/tasks | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:28:40.036Z] INFO: Response: POST / | Status: 201 | Data: {"id":8,"title":"Unit Test Task","description":"Testing task creation","status":"TO_DO","createdAt":"2025-02-24T23:28:40.000Z","updatedAt":"2025-02-24T23:28:40.000Z"}
+[2025-02-24T23:28:40.044Z] INFO: Request: GET /api/tasks | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:28:40.047Z] INFO: Response: GET / | Status: 200 | Data: [{"id":2,"title":"Build contact page","description":"Designing and implementing the contact page  ","status":"IN_PROGRESS","createdAt":"2025-02-24T16:09:05.000Z","updatedAt":"2025-02-24T16:14:40.000Z"},{"id":5,"title":"Build Nav bar","description":"Designing and implementing the Nav Bar  ","status":"TO_DO","createdAt":"2025-02-24T16:47:51.000Z","updatedAt":"2025-02-24T16:47:51.000Z"},{"id":6,"title":"Create the BRD","description":"complete the BRD for the task management app ","status":"IN_PROGRESS","createdAt":"2025-02-24T20:37:58.000Z","updatedAt":"2025-02-24T20:38:53.000Z"},{"id":7,"title":"New Task","description":"Test task","status":"TO_DO","createdAt":"2025-02-24T23:04:27.000Z","updatedAt":"2025-02-24T23:04:27.000Z"},{"id":8,"title":"Unit Test Task","description":"Testing task creation","status":"TO_DO","createdAt":"2025-02-24T23:28:40.000Z","updatedAt":"2025-02-24T23:28:40.000Z"}]
+[2025-02-24T23:28:40.051Z] INFO: Request: GET /api/tasks/8 | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:28:40.054Z] INFO: Response: GET /8 | Status: 200 | Data: {"id":8,"title":"Unit Test Task","description":"Testing task creation","status":"TO_DO","createdAt":"2025-02-24T23:28:40.000Z","updatedAt":"2025-02-24T23:28:40.000Z"}
+[2025-02-24T23:28:40.058Z] INFO: Request: PUT /api/tasks/8 | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:28:40.063Z] INFO: Response: PUT /8 | Status: 200 | Data: {"id":8,"title":"Updated Task","description":"Updated description","status":"IN_PROGRESS","createdAt":"2025-02-24T23:28:40.000Z","updatedAt":"2025-02-24T23:28:40.000Z"}
+[2025-02-24T23:28:40.072Z] INFO: Request: DELETE /api/tasks/8 | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:28:40.075Z] INFO: Response: DELETE /8 | Status: 200 | Data: {"message":"Task deleted successfully"}
+[2025-02-24T23:39:02.575Z] INFO: Request: POST /api/tasks | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:39:02.612Z] INFO: Response: POST / | Status: 201 | Data: {"id":9,"title":"Unit Test Task","description":"Testing task creation","status":"TO_DO","createdAt":"2025-02-24T23:39:02.000Z","updatedAt":"2025-02-24T23:39:02.000Z"}
+[2025-02-24T23:39:02.621Z] INFO: Request: GET /api/tasks | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:39:02.624Z] INFO: Response: GET / | Status: 200 | Data: [{"id":2,"title":"Build contact page","description":"Designing and implementing the contact page  ","status":"IN_PROGRESS","createdAt":"2025-02-24T16:09:05.000Z","updatedAt":"2025-02-24T16:14:40.000Z"},{"id":5,"title":"Build Nav bar","description":"Designing and implementing the Nav Bar  ","status":"TO_DO","createdAt":"2025-02-24T16:47:51.000Z","updatedAt":"2025-02-24T16:47:51.000Z"},{"id":6,"title":"Create the BRD","description":"complete the BRD for the task management app ","status":"IN_PROGRESS","createdAt":"2025-02-24T20:37:58.000Z","updatedAt":"2025-02-24T20:38:53.000Z"},{"id":7,"title":"New Task","description":"Test task","status":"TO_DO","createdAt":"2025-02-24T23:04:27.000Z","updatedAt":"2025-02-24T23:04:27.000Z"},{"id":9,"title":"Unit Test Task","description":"Testing task creation","status":"TO_DO","createdAt":"2025-02-24T23:39:02.000Z","updatedAt":"2025-02-24T23:39:02.000Z"}]
+[2025-02-24T23:39:02.630Z] INFO: Request: GET /api/tasks/9 | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:39:02.633Z] INFO: Response: GET /9 | Status: 200 | Data: {"id":9,"title":"Unit Test Task","description":"Testing task creation","status":"TO_DO","createdAt":"2025-02-24T23:39:02.000Z","updatedAt":"2025-02-24T23:39:02.000Z"}
+[2025-02-24T23:39:02.643Z] INFO: Request: PUT /api/tasks/9 | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:39:02.648Z] INFO: Response: PUT /9 | Status: 200 | Data: {"id":9,"title":"Updated Task","description":"Updated description","status":"IN_PROGRESS","createdAt":"2025-02-24T23:39:02.000Z","updatedAt":"2025-02-24T23:39:02.000Z"}
+[2025-02-24T23:39:02.656Z] INFO: Request: DELETE /api/tasks/9 | IP: ::ffff:127.0.0.1 | User-Agent: undefined
+[2025-02-24T23:39:02.660Z] INFO: Response: DELETE /9 | Status: 200 | Data: {"message":"Task deleted successfully"}
