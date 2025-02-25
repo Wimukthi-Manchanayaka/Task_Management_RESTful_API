@@ -21,9 +21,23 @@ task-management-api
 │   │   ├── taskRoutes.js
 │   ├── config/
 │   │   ├── db.js
+│   ├── middleware/
+│   │   ├── errorHandler.js
+│   │   ├── logoMiddleware.js
+│   │   ├── responseLogger.js
+│   ├── routes/
+│   │   ├── taskRoutes.js
+│   ├── tests/
+│   │   ├── db.test.js
+│   │   ├── taskModel.test.js
+│   │   ├── taskRoutes.test.js
+│   ├── utils/
+│   │   ├── logger.js
 │   ├── app.js
 │   ├── server.js
 │── .env
+│── .gitignore
+│── .package-lock.json
 │── package.json
 │── README.md
 ```
@@ -196,7 +210,7 @@ npm start    # Starts normally
 
 - Implement **JWT authentication** for user management.
 - Add **pagination** for task listings.
-- Implement **Unit Tests** with Jest/Mocha.
+
 
 ---
 
