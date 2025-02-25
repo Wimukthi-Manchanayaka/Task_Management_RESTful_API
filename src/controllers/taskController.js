@@ -41,12 +41,25 @@ exports.getTaskById = async (req, res) => {
 // Update a task
 exports.updateTask = async (req, res) => {
   try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
     const updatedTask = await TaskModel.update(req.params.id, req.body);
-    res.json(updatedTask);
+
+    // If the update operation didn't return a valid task, return 404
+    if (!updatedTask) {
+      return res.status(404).json({ message: "Task not found or not updated" });
+    }
+
+    res.status(200).json({ message: "Task updated successfully", updatedTask });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error("Error updating task:", error);
+    res.status(500).json({ message: "Internal server error" });
   }
 };
+
 
 // Delete a task
 exports.deleteTask = async (req, res) => {
